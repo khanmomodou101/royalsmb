@@ -61,7 +61,7 @@ app_license = "MIT"
 # Installation
 # ------------
 
-# before_install = "royalsmb.install.before_install"
+after_install = "royalsmb.api.before_install"
 # after_install = "royalsmb.install.after_install"
 
 # Uninstallation
