@@ -217,3 +217,13 @@ doc_events = {
 # auth_hooks = [
 # 	"royalsmb.auth.validate"
 # ]
+
+fixtures = [
+    {"doctype": "Client Script", 
+    "filters": [["module" , "in" , ("Royalsmb" )]]
+    },
+    {"doctype": "Custom Field",
+    "filters": [["module" , "in" , ("Royalsmb" )]]
+    },
+  
+    ]
