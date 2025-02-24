@@ -116,16 +116,16 @@ after_install = "royalsmb.api.before_install"
 # ---------------
 # Hook on document methods and events
 
-doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-    "Contact": {
-        "validate": "royalsmb.api.remove_plus_sign"
-    },
-}
+# doc_events = {
+# # 	"*": {
+# # 		"on_update": "method",
+# # 		"on_cancel": "method",
+# # 		"on_trash": "method"
+# # 	}
+#     "Contact": {
+#         "validate": "royalsmb.api.remove_plus_sign"
+#     },
+# }
 
 
 # Scheduled Tasks

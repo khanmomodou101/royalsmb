@@ -1,4 +1,4 @@
-# Copyright (c) 2024, royalsmb and Contributors
+# Copyright (c) 2025, royalsmb and Contributors
 # See license.txt
 
 # import frappe
