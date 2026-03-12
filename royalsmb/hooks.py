@@ -116,16 +116,17 @@ after_install = "royalsmb.api.before_install"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
+doc_events = {
 # # 	"*": {
 # # 		"on_update": "method",
 # # 		"on_cancel": "method",
 # # 		"on_trash": "method"
 # # 	}
-#     "Contact": {
-#         "validate": "royalsmb.api.remove_plus_sign"
-#     },
-# }
+    "Item": {
+        "on_update": "royalsmb.utils.update_price"
+    },
+
+}
 
 
 # Scheduled Tasks
@@ -223,6 +224,9 @@ fixtures = [
     "filters": [["module" , "in" , ("Royalsmb" )]]
     },
     {"doctype": "Custom Field",
+    "filters": [["module" , "in" , ("Royalsmb" )]]
+    },
+    {"doctype": "Print Format",
     "filters": [["module" , "in" , ("Royalsmb" )]]
     },
   
